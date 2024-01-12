@@ -1,22 +1,81 @@
 :root {
   font: 16px / 1 sans-serif;
-
-  // SDG brand colors
-  --asphalt: #2f3737;
-  --bright-sky: #80ced2;
-  --lime: #b1d133;
-  --night-sky: #85577e;
-  --sand: #f7f0da;
-  --sea: #5a9090;
-  --sun: #d5562b;
-  --tangerine: #f99d1b;
 }
-
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  min-height: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin: 0.5rem;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+article {
+  margin: 1rem;
+}
+
+article ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0;
+}
+img[src*="https://octodex.github.com//images"]
+{
+  width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5%;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+header a:link,
+header a:visited {
+  color: black;
+}
+.rightNav {
+  visibility: hidden;
+}
+.bold {
+  font-weight: bold;
+}
+@media only screen and (min-width: 720px) {
+  section {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .rightNav {
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section {
+    grid-template-columns: auto auto auto auto;
+  }
 }
