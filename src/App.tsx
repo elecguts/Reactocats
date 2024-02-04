@@ -1,4 +1,5 @@
 import React from 'react'
+import { Octocat } from './Octocat'
 
 export function App() {
   return (
@@ -290,6 +291,16 @@ export function App() {
               </li>
             </ul>
           </article>
+          <Octocat
+            catLink="https://octodex.github.com//spidertocat/"
+            imgSrc="https://octodex.github.com//images/spidertocat.png"
+            imgAlt="Spidertocat"
+            name="Spidertocat"
+            catNumber={88}
+            contributorLink="https://github.com/jeejkang"
+            contributorImg="https://github.com/jeejkang.png"
+            contributorAltImg="jeejkang"
+          />
         </section>
       </main>
       <footer>
