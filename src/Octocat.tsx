@@ -3,7 +3,6 @@ import React from 'react'
 type OctocatProps = {
   catLink: string
   imgSrc: string
-  imgAlt: string
   catNumber: number
   name: string
   contributorLink: string
@@ -15,7 +14,7 @@ export function Octocat(props: OctocatProps) {
   return (
     <article>
       <a href={props.catLink}>
-        <img src={props.imgSrc} width="400" height="400" alt={props.imgAlt} />
+        <img src={props.imgSrc} width="400" height="400" alt={props.name} />
       </a>
       <ul>
         <li>
